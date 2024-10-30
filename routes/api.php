@@ -17,3 +17,4 @@ Route::post('/persegi-panjang', [App\Http\Controllers\Api\PersegiPanjangControll
 Route::post('/segitiga', [App\Http\Controllers\Api\SegitigaController::class, 'hitung']);
 Route::post('/lingkaran', [App\Http\Controllers\Api\LingkaranController::class, 'hitung']);
 Route::post('/kubus', [App\Http\Controllers\Api\KubusController::class, 'hitung']);
+Route::apiResource('/forms', App\Http\Controllers\Api\Form\FormController::class);
